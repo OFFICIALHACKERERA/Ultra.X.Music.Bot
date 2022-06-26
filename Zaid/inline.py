@@ -12,8 +12,9 @@ def stream_markup(user_id):
   buttons = [
   
     [
-      InlineKeyboardButton(text="• ɢʀᴏᴜᴘ • ", url=f"https://t.me/HEPPYLIFI"),
-      InlineKeyboardButton(text="• ᴏᴡɴᴇʀ • ", url=f"https://t.me/OFFICIALHACKER72"),
+      InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"https://t.me/HEPPYLIFI"),
+      InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
+      InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/Broken_Heart_72"),
     ],
   ]
   return buttons
