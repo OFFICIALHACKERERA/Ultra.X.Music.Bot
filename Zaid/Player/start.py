@@ -90,10 +90,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url='https://t.me/{USERNAME}?startgroup=true'),
             ],
             [
-                InlineKeyboardButton("•ɢʀᴏᴜᴘ•", url=f"https://t.me/HEPPYLIFI"),
-                InlineKeyboardButton("•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Broken_Heart_72"),
-                InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/OFFICIALHACKERERA"),
-                InlineKeyboardButton("•ᴄᴏᴍᴍᴀɴᴅ•", callback_data="help"),
+                InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/HEPPYLIFI"),
+                InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Broken_Heart_72"),
+                InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/OFFICIALHACKERERA"),
+                InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", callback_data="help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -180,13 +180,13 @@ async def start(client: Client, message: Message):
     USERNAME = get_me.username
     buttons = [
             [
-                InlineKeyboardButton("•ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ•", url=f'https://t.me/{USERNAME}?startgroup=true'),
+                InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f'https://t.me/{USERNAME}?startgroup=true'),
             ],
             [
-                InlineKeyboardButton("•ɢʀᴏᴜᴘ•", url=f"https://t.me/HEPPYLIFI"),
-                InlineKeyboardButton("•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Broken_Heart_72"),
-                InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/OFFICIALHACKERERA"),
-                InlineKeyboardButton("•ᴄᴏᴍᴍᴀɴᴅ•", callback_data="help"),
+                InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/HEPPYLIFI"),
+                InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Broken_Heart_72"),
+                InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/OFFICIALHACKERERA"),
+                InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", callback_data="help"),
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
