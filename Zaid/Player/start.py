@@ -8,7 +8,7 @@ from config import START_PIC, UPDATES_CHANNEL, GROUP_SUPPORT
 
 
 ALIVE_PIC = START_PIC
-HOME_TEXT = "**ᴜʟᴛʀᴀ x ᴍᴜsɪᴄ ʙᴏᴛ**"
+HOME_TEXT = "**ʜᴇʏ ᴛʜɪs ɪs ᴀ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ**"
 HELP_TEXT = """
 ️ **Setup Guide** :
 
