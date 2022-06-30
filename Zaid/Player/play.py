@@ -249,8 +249,8 @@ async def play(c: Client, m: Message):
         
     else:
         if len(m.command) < 2:
-         await m.reply_photo(
-                     photo=f"{IMG_5}",
+         await m.reply_video(
+                     video=f"{IMG_5}",
                     caption="**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/OFFICIALHACKERERA)**"
                     ,
                       reply_markup=InlineKeyboardMarkup(
