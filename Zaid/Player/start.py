@@ -8,7 +8,7 @@ from config import START_PIC, UPDATES_CHANNEL, GROUP_SUPPORT
 
 
 ALIVE_PIC = START_PIC
-HOME_TEXT = "**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/OFFICIALHACKERERA)**"
+HOME_TEXT = "**ᴜʟᴛʀᴀ x ᴍᴜsɪᴄ ʙᴏᴛ ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ØFFɪㄈɪΛŁ нΛㄈҚƐ尺](https://t.me/OFFICIALHACKERERA)**"
 HELP_TEXT = """
 ️ **Setup Guide** :
 
@@ -90,8 +90,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url='https://t.me/{USERNAME}?startgroup=true'),
             ],
             [
-                InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/HEPPYLIFI"),
-                InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Broken_Heart_72"),
+                InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/OFFICIALHACKERERA"),
                 InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ", callback_data="help"),
             ]
@@ -190,7 +190,7 @@ async def start(client: Client, message: Message):
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_video(video=f"{ALIVE_PIC}", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
+    await message.reply_photo(photo=f"{ALIVE_PIC}", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
 
 @Client.on_message(filters.command(["help"]) & filters.private)
 async def help(client: Client, message: Message):
@@ -211,4 +211,4 @@ async def help(client: Client, message: Message):
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_video(video=f"{ALIVE_PIC}", caption=f"{HELP_TEXT}", reply_markup=reply_markup)
+    await message.reply_photo(photo=f"{ALIVE_PIC}", caption=f"{HELP_TEXT}", reply_markup=reply_markup)
