@@ -139,9 +139,9 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
                [     
                   [
-                      InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/HEPPYLIFI"),
-                      InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
-                      InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/Broken_Heart_72"),
+                      InlineKeyboardButton(text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/{GROUP_SUPPORT}"),
+                      InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/OFFICIALHACKERERA"),
+                      InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/{UPDATES_CHANNEL}"),
                    ]
                      
                   ]
@@ -156,7 +156,7 @@ async def play(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f" To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -251,21 +251,21 @@ async def play(c: Client, m: Message):
         if len(m.command) < 2:
          await m.reply_photo(
                      photo=f"{IMG_5}",
-                    caption="**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/OFFICIALHACKERERA)**"
+                    caption="** 𝐂ʀᴇᴀᴛᴏʀ:[ØFFɪㄈɪΛŁ нΛㄈҚƐ尺](https://t.me/OFFICIALHACKERERA)**"
                     ,
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/HEPPYLIFI"),
-                            InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
-                            InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/Broken_Heart_72"),
+                            InlineKeyboardButton(text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/HEPPYLIFI"),
+                            InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/OFFICIALHACKERERA"),
+                            InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Broken_Heart_72"),
                         ]
                     ]
                 )
             )
         else:
             suhu = await m.reply_text(
-        f"**» ᴘʀᴏᴄᴇssɪɴɢ​... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**"
+        f"** ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ!...**"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
@@ -300,7 +300,7 @@ async def play(c: Client, m: Message):
                     else:
                         try:
                             await suhu.edit(
-                            f"**ғᴀsᴛᴇʀ...**"
+                            f"**ᴜʟᴛʀᴀ x **"
                         )
                             await call_py.join_group_call(
                                 chat_id,
