@@ -34,7 +34,7 @@ ZAID_IMGS = [
     "Process/ImageFont/J4o.gif",
     "Process/ImageFont/Cad.gif",
     "Process/ImageFont/AbF9.gif",
-    "Process/ImageFont/Green.png",
+    "Process/ImageFont/A8rF.gif",
     "Process/ImageFont/Lightblue.png",
     "Process/ImageFont/Lightred.png",
     "Process/ImageFont/Purple.png",
