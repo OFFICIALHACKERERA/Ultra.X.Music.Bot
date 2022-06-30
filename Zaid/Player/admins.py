@@ -46,8 +46,9 @@ async def skip(client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/HEPPYLIFI"),
-                InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/OFFICIALHACKERERA"),
+                InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"https://t.me/HEPPYLIFI"),
+                InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
+                InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/Broken_Heart_72"),
                 
             ]
         ]
@@ -119,7 +120,7 @@ async def pause(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ɪɴ sᴛʀᴇᴀᴍɪɴɢ**")
 
 
 @Client.on_message(
@@ -137,7 +138,7 @@ async def resume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ɪɴ sᴛʀᴇᴀᴍɪɴɢ**")
 
 
 @Client.on_message(
@@ -173,7 +174,7 @@ async def unmute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply(" **ɴᴏᴛʜɪɴɢ ɪɴ sᴛʀᴇᴀᴍɪɴɢ**")
 
 
 @Client.on_callback_query(filters.regex("cbpause"))
