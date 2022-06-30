@@ -250,20 +250,20 @@ async def vplay(c: Client, m: Message):
         if len(m.command) < 2:
             await m.reply_photo(
                      photo=f"{IMG_6}",
-                    caption="**ᴜʟᴛʀᴀ x ᴍᴜsɪᴄ ʙᴏᴛ**"
+                    caption="**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/OFFICIALHACKERERA)**"
                     ,
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/HEPPYLIFI"),
-                            InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/OFFICIALHACKERERA"),
-                            InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Broken_Heart_72"),
+                            InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"https://t.me/HEPPYLIFI"),
+                            InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
+                            InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/Broken_Heart_72"),
                         ]
                     ]
                 )
             )
         else:
-            loser = await c.send_message(chat_id, "**ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ!...**")
+            loser = await c.send_message(chat_id, "**» ᴘʀᴏᴄᴇssɪɴɢ​... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
