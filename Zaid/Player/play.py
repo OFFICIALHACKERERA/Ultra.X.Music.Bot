@@ -139,9 +139,9 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
                [     
                   [
-                      InlineKeyboardButton(text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/OFFICIALHACKERERA"),
-                      InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                      InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"https://t.me/{GROUP_SUPPORT}"),
+                      InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
+                      InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/{UPDATES_CHANNEL}"),
                    ]
                      
                   ]
@@ -251,21 +251,21 @@ async def play(c: Client, m: Message):
         if len(m.command) < 2:
          await m.reply_photo(
                      photo=f"{IMG_5}",
-                    caption="** 𝐂ʀᴇᴀᴛᴏʀ:[ØFFɪㄈɪΛŁ нΛㄈҚƐ尺](https://t.me/OFFICIALHACKERERA)**"
+                    caption="**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/OFFICIALHACKERERA)**"
                     ,
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/HEPPYLIFI"),
-                            InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/OFFICIALHACKERERA"),
-                            InlineKeyboardButton(text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/Broken_Heart_72"),
+                            InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"https://t.me/HEPPYLIFI"),
+                            InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/OFFICIALHACKERERA"),
+                            InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/Broken_Heart_72"),
                         ]
                     ]
                 )
             )
         else:
             suhu = await m.reply_text(
-        f"** ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ!...**"
+        f"**» ᴘʀᴏᴄᴇssɪɴɢ... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
@@ -300,7 +300,7 @@ async def play(c: Client, m: Message):
                     else:
                         try:
                             await suhu.edit(
-                            f"**ᴜʟᴛʀᴀ x **"
+                            f"**FASTAR **"
                         )
                             await call_py.join_group_call(
                                 chat_id,
