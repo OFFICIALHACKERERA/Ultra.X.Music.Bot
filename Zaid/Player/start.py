@@ -4,10 +4,10 @@ from pyrogram.types import Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import MessageNotModified
 from Zaid.main import Test, bot as Client
-from config import START_PIC, UPDATES_CHANNEL, GROUP_SUPPORT
+from config import START_VIDEO, UPDATES_CHANNEL, GROUP_SUPPORT
 
 
-ALIVE_PIC = START_PIC
+ALIVE_PIC = START_VIDEO
 HOME_TEXT = "**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/OFFICIALHACKERERA)**"
 HELP_TEXT = """
 ️ **Setup Guide** :
