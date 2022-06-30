@@ -294,7 +294,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=image,
-                            caption=f" **Track added to queue »** `{pos}`\n\n **Name:** [{songname[:22]}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🎧 **Request by:** {requester}",
+                            caption=f"**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/OFFICIALHACKERERA)**",
                             reply_markup=keyboard,
                         )
                     else:
@@ -314,7 +314,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=image,
-                                caption=f"**𝐍ᴀᴍᴇ:** [{songname[:22]}]({url})\n**𝐃ᴜʀᴀᴛɪᴏɴ** `{duration}`\n**𝐒ᴛᴀᴛᴜs** `Playing`\n**𝐑ᴇǫᴜᴇsᴛ 𝐁ʏ** {requester}",
+                                caption=f"**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/OFFICIALHACKERERA)**",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
