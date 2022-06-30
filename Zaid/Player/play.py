@@ -29,12 +29,12 @@ import yt_dlp
 import yt_dlp
 
 ZAID_IMGS = [
-    "Process/ImageFont/AnimatedWave.gif",
-    "Process/ImageFont/J59.gif",
-    "Process/ImageFont/J4o.gif",
-    "Process/ImageFont/Cad.gif",
-    "Process/ImageFont/AbF9.gif",
-    "Process/ImageFont/A8rF.gif",
+    "Process/ImageFont/LightGreen.png",
+    "Process/ImageFont/Red.png",
+    "Process/ImageFont/Black.png",
+    "Process/ImageFont/Blue.png",
+    "Process/ImageFont/Grey.png",
+    "Process/ImageFont/Green.png",
     "Process/ImageFont/Lightblue.png",
     "Process/ImageFont/Lightred.png",
     "Process/ImageFont/Purple.png",
@@ -292,8 +292,8 @@ async def play(c: Client, m: Message):
                         requester = (
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
-                        await m.reply_video(
-                            video=image,
+                        await m.reply_photo(
+                            photo=image,
                             caption=f"**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/OFFICIALHACKERERA)**",
                             reply_markup=keyboard,
                         )
@@ -312,8 +312,8 @@ async def play(c: Client, m: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
-                            await m.reply_video(
-                                video=image,
+                            await m.reply_photo(
+                                photo=image,
                                 caption=f"**ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/OFFICIALHACKERERA)**",
                                 reply_markup=keyboard,
                             )
