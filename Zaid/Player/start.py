@@ -190,7 +190,7 @@ async def start(client: Client, message: Message):
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo=f"{ALIVE_PIC}", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
+    await message.reply_video(video=f"{ALIVE_PIC}", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
 
 @Client.on_message(filters.command(["help"]) & filters.private)
 async def help(client: Client, message: Message):
@@ -211,4 +211,4 @@ async def help(client: Client, message: Message):
             ]
             ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo=f"{ALIVE_PIC}", caption=f"{HELP_TEXT}", reply_markup=reply_markup)
+    await message.reply_video(video=f"{ALIVE_PIC}", caption=f"{HELP_TEXT}", reply_markup=reply_markup)
