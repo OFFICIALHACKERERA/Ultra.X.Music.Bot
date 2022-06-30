@@ -221,8 +221,8 @@ async def play(c: Client, m: Message):
             if chat_id in QUEUE:
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
-                await m.reply_photo(
-                    photo=f"{IMG_1}",
+                await m.reply_video(
+                    video=f"{IMG_1}",
                     caption=f"**ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ »** `{pos}`\n\n**ɴᴀᴍᴇ** [{songname}]({link}) ᴍᴜsɪᴄ\n* ᴄʜᴀᴛ** `{chat_id}`\n** ʀᴇǫᴜᴇsᴛ ʙʏ** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
@@ -238,8 +238,8 @@ async def play(c: Client, m: Message):
                 add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
-                await m.reply_photo(
-                    photo=f"{IMG_2}",
+                await m.reply_video(
+                    video=f"{IMG_2}",
                     caption=f"**Name:** [{songname}]({link})\n **Chat:** `{chat_id}`\n**Status:** `Playing`\n**Request by:** {requester}\n **Stream type:** `Music`",
                     reply_markup=keyboard,
                 )
