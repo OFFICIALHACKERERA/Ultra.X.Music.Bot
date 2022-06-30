@@ -300,7 +300,7 @@ async def play(c: Client, m: Message):
                     else:
                         try:
                             await suhu.edit(
-                            f"**FASTAR **"
+                            f"**ғᴀsᴛᴇʀ...**"
                         )
                             await call_py.join_group_call(
                                 chat_id,
